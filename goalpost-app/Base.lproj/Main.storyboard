@@ -138,17 +138,38 @@
                                                     <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-14-u4t">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-Ph-kCG">
+                                                            <rect key="frame" x="76" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Xco-Ph-kCG" firstAttribute="centerY" secondItem="ph2-14-u4t" secondAttribute="centerY" id="AJ6-U2-hv3"/>
+                                                        <constraint firstItem="Xco-Ph-kCG" firstAttribute="centerX" secondItem="ph2-14-u4t" secondAttribute="centerX" id="L0h-hj-6WL"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jBV-cv-zF9" firstAttribute="top" secondItem="TWG-6W-r9f" secondAttribute="top" constant="10" id="8Wp-0s-ToQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="ph2-14-u4t" secondAttribute="trailing" id="C6g-a4-7kz"/>
+                                                <constraint firstItem="ph2-14-u4t" firstAttribute="top" secondItem="TWG-6W-r9f" secondAttribute="top" id="Wq8-48-ctW"/>
                                                 <constraint firstAttribute="trailing" secondItem="mcQ-PE-PvO" secondAttribute="trailing" constant="20" id="gO3-Tg-JuL"/>
                                                 <constraint firstItem="mcQ-PE-PvO" firstAttribute="top" secondItem="TWG-6W-r9f" secondAttribute="top" constant="10" id="gXH-O3-awn"/>
+                                                <constraint firstItem="ph2-14-u4t" firstAttribute="leading" secondItem="TWG-6W-r9f" secondAttribute="leading" id="hSf-Dw-RaH"/>
                                                 <constraint firstAttribute="bottom" secondItem="jBV-cv-zF9" secondAttribute="bottom" constant="10" id="myu-Bw-h0f"/>
                                                 <constraint firstItem="jBV-cv-zF9" firstAttribute="leading" secondItem="TWG-6W-r9f" secondAttribute="leading" constant="20" id="nmh-28-w5D"/>
+                                                <constraint firstAttribute="bottom" secondItem="ph2-14-u4t" secondAttribute="bottom" id="yRw-RX-ahq"/>
                                                 <constraint firstAttribute="bottom" secondItem="mcQ-PE-PvO" secondAttribute="bottom" constant="10" id="ynd-1R-Z20"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="ph2-14-u4t" id="cQs-mm-dis"/>
                                             <outlet property="goalDiscriptionLbl" destination="xJw-TU-xUl" id="iPa-cZ-t0a"/>
                                             <outlet property="goalProgressLbl" destination="mcQ-PE-PvO" id="ynu-zS-WfW"/>
                                             <outlet property="goalTypeLbl" destination="GeY-IJ-ny4" id="6YI-r4-7oM"/>
@@ -177,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="62"/>
+            <point key="canvasLocation" x="-465.21739130434787" y="61.607142857142854"/>
         </scene>
         <!--Create GoalVC-->
         <scene sceneID="4cP-4v-8VT">
@@ -285,7 +306,7 @@
                                 <rect key="frame" x="0.0" y="430" width="414" height="466"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGM-Lw-69b">
-                                        <rect key="frame" x="0.0" y="396" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="416" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="btD-hE-8Gm"/>
@@ -302,7 +323,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="sGM-Lw-69b" secondAttribute="bottom" constant="20" id="a10-Wc-KCp"/>
+                                    <constraint firstAttribute="bottom" secondItem="sGM-Lw-69b" secondAttribute="bottom" id="a10-Wc-KCp"/>
                                     <constraint firstAttribute="trailing" secondItem="sGM-Lw-69b" secondAttribute="trailing" id="dRl-11-8UB"/>
                                     <constraint firstItem="sGM-Lw-69b" firstAttribute="leading" secondItem="LZp-n7-iiq" secondAttribute="leading" id="nfb-Q2-l88"/>
                                 </constraints>
@@ -406,7 +427,7 @@
                                 <rect key="frame" x="0.0" y="240" width="414" height="656"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF2-bR-ia0">
-                                        <rect key="frame" x="0.0" y="586" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="606" width="414" height="50"/>
                                         <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ASV-Mh-SNH"/>
@@ -424,7 +445,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="fF2-bR-ia0" secondAttribute="bottom" constant="20" id="mFd-Ao-f8A"/>
+                                    <constraint firstAttribute="bottom" secondItem="fF2-bR-ia0" secondAttribute="bottom" id="mFd-Ao-f8A"/>
                                     <constraint firstAttribute="trailing" secondItem="fF2-bR-ia0" secondAttribute="trailing" id="pUH-bF-6Kr"/>
                                     <constraint firstItem="fF2-bR-ia0" firstAttribute="leading" secondItem="hxY-5W-263" secondAttribute="leading" id="waV-RN-Tnr"/>
                                 </constraints>
