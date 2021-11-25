@@ -20,6 +20,7 @@
 		FA33E2AF274E31E30017F246 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33E2AE274E31E30017F246 /* UIViewControllerExt.swift */; };
 		FA33E2B1274E35AE0017F246 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33E2B0274E35AE0017F246 /* UIViewExt.swift */; };
 		FA33E2B3274E39A30017F246 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33E2B2274E39A20017F246 /* UIButtonExt.swift */; };
+		FA33E2B5274E3F340017F246 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33E2B4274E3F340017F246 /* FinishGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FA33E2AE274E31E30017F246 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		FA33E2B0274E35AE0017F246 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		FA33E2B2274E39A20017F246 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		FA33E2B4274E3F340017F246 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				FA33E270274CE2CC0017F246 /* GoalsVC.swift */,
 				FA33E2AC274E30580017F246 /* CreateGoalVC.swift */,
+				FA33E2B4274E3F340017F246 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				FA33E271274CE2CC0017F246 /* GoalsVC.swift in Sources */,
 				FA33E26D274CE2CC0017F246 /* AppDelegate.swift in Sources */,
 				FA33E2AF274E31E30017F246 /* UIViewControllerExt.swift in Sources */,
+				FA33E2B5274E3F340017F246 /* FinishGoalVC.swift in Sources */,
 				FA33E2AB274D2C500017F246 /* GoalType.swift in Sources */,
 				FA33E277274CE2CC0017F246 /* goalpost_app.xcdatamodeld in Sources */,
 				FA33E2AD274E30580017F246 /* CreateGoalVC.swift in Sources */,
